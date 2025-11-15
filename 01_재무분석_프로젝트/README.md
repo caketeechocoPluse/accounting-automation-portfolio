@@ -15,11 +15,12 @@
 - Jupyter Notebook
 
 ## 📁 파일 구조
+<pre>
 ├── port01.py # 메인 분석 코드
 ├── 삼성전자_재무제표.xlsx # 원본 데이터
 ├── matplot.png # 결과 그래프
 └── README.md
-
+</pre>
 
 
 ## 🚀 실행 방법
