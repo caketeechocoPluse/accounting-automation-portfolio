@@ -27,7 +27,7 @@
 - 전년 동월 대비 증감률 자동 계산
 
 **실행 결과**
-![결과 이미지](./images/result_sample.png)
+
 
 ---
 
@@ -70,9 +70,7 @@
 | 버전 관리 | Git, GitHub | ⭐⭐⭐ |
 
 ## 📫 연락처
-- Email: your.email@example.com
-- LinkedIn: linkedin.com/in/yourprofile
-- Blog: yourblog.com (선택)
+- Email: 
 
 ## 📜 라이선스
 MIT License - 자유롭게 사용 가능합니다.
