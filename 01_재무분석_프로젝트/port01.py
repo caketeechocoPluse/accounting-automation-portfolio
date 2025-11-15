@@ -20,15 +20,15 @@ plt.rc('font', family='Malgun Gothic')
 # 1. 재무제표 데이터 로드
 df1 = pd.read_excel('삼성전자_재무제표.xlsx', engine='openpyxl',sheet_name='01재무상태표', index_col="계정")
 df2 = pd.read_excel('삼성전자_재무제표.xlsx', engine='openpyxl',sheet_name='02손익계산서', index_col="계정")
-
+df1_shifted = df1.shift(-1, axis=1)
 
 자산 = df1.loc["자산총계"]
 부채 = df1.loc["부채총계"]
 자본 = df1.loc["자본총계"]
 
 당기순이익 = df2.loc["당기순이익"]
-전_자본 = 자본.shift(1)
-전_자산 = 자산.shift(1)
+전_자본 = df1_shifted.loc["자본총계"]
+전_자산 = df1_shifted.loc["자산총계"]
 
 유동자산 = df1.loc["유동자산"]
 유동부채 = df1.loc["유동부채"]
@@ -79,6 +79,7 @@ print(formatted_부채비율)
     '자산': 자산,
     '부채': 부채,
     '자본': 자본,
+    '당기순이익': 당기순이익,
     '부채비율(%)': 부채비율,
     'ROE': ROE,
     'ROA': ROA,
@@ -93,6 +94,7 @@ print(결과)
     '자산': '{:,.0f}',
     '부채': '{:,.0f}',
     '자본': '{:,.0f}',
+    '당기순이익': '{:,.0f}',
     '부채비율(%)': '{:.2f}',
     'ROE': '{:.2f}',
     'ROA': '{:.2f}',
