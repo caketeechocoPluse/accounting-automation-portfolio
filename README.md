@@ -18,7 +18,6 @@
 ├── port01.py # 메인 분석 코드
 ├── 삼성전자_재무상태표.xlsx
 ├── [삼성전자]사업보고서_XBRL(미리보기)(2025.03.11).html # 원본 데이터
-├── table.png
 ├── matplot.png
 └── README.md
 
@@ -33,11 +32,6 @@ jupyter notebook port01.py
 
 ---
 ![matplot](matplot.png)
-
----
-![table](table.png)
-
-
 
 
 ## 💡 인사이트
